@@ -33,7 +33,7 @@ count = 10
 //:
 //: Now it's your turn. Change `greeting` to be a different string by using the assignment operator.
 
-
+greeting = "Good luck world"
 
 //: *Note:* unlike math, where `x = 10` and `10 = x` are interchangeable, in programming the variable goes on the left of the `=` symbol, and the new value goes on the right.
 
@@ -42,6 +42,8 @@ count = 10
 //:
 //: We want to add 1 to whatever the value of `count` is now. We could manually look at the value in `count`, see that it is 10 and put 11 into `count` using the assignment operator. This works, but we can do it in a better way. We can set count to be whatever count is, plus 1. See if you can figure out the syntax for this.
 
+count
+count = count + 1
 
 //: *Note:* If you're ever unsure of the contents of a variable in a playground, write the variable on a line by itself and you will see its value printed to the right of it. Or you can use the `print` function like so: `print(variableName)`.
 
@@ -51,6 +53,8 @@ count = 10
 //: Types are very important in Swift. When you create a variable, that variable has a "type". What this means is the variable can only hold one type of data. If the variable is of type `String`, that means you can't put a number in it.
 //:
 //: Hold down the Option key and click on the variables `greeting` and `count` to see a popup window with information about the variable. If we click on `greeting`, we can see it's a `String`. What type is `count`?
+
+// count is an integer
 
 greeting
 count
@@ -69,11 +73,11 @@ count
 //: What type are the variables `tipAmount`, and `isOpen`?
 
 var tipAmount = 6.01
-// tipAmount's type is:
+// tipAmount's type is: double
 
 
 var isOpen = true
-// isOpen's type is:
+// isOpen's type is: bool
 
 
 //: ## Type Inference
@@ -89,7 +93,7 @@ var height: Double = 10
 //: Since all our variables have types, even if we haven't specifically set them, we can't store any value in them... only values of the right type.
 //: Test this out. Try setting the value of `count` to be `height`:
 
-
+count = height
 
 //: It didn't work, right? They are both numbers, but `count` is an Int, and `height` is a `Double`. There are ways to convert the `Double` 10 into the `Int` 10, but we won't go into that just now.
 
@@ -104,6 +108,7 @@ var height: Double = 10
 
 var schoolName = "Lightouse Labs"
 
-
+greeting.uppercased()
+greeting.lowercased()
 
 //: THE END
